@@ -2,7 +2,7 @@
 
 namespace ProductWebJarTask.Domain.Common;
 
-public class BaseDomainEntity
+public abstract class BaseDomainEntity
 {
     [Key]
     public long Id { get; set; }

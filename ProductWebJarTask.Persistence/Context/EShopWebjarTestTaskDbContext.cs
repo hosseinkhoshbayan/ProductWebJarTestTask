@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProductWebJarTask.Domain.Common;
+using ProductWebJarTask.Domain.Product;
+
 namespace ProductWebJarTask.Persistence.Context;
 
 public class EShopWebjarTestTaskDbContext:DbContext
@@ -8,6 +10,16 @@ public class EShopWebjarTestTaskDbContext:DbContext
     {
 
     }
+
+    #region Products
+
+    public DbSet<Product> Products { get; set; }
+
+    public DbSet<ProductFeature> ProductFeatures { get; set; }
+    public DbSet<ProductAccessory> ProductAccessories { get; set; }
+    public DbSet<ProductAmount> ProductAmounts { get; set; }
+
+    #endregion
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
