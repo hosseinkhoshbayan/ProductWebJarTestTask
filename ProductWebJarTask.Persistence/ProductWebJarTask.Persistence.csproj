@@ -24,4 +24,9 @@
     <ProjectReference Include="..\ProductWebJarTask.Application\ProductWebJarTask.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Service\" />
+  </ItemGroup>
+
 </Project>
