@@ -17,4 +17,11 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProductWebJarTask.Application\ProductWebJarTask.Application.csproj" />
+    <ProjectReference Include="..\ProductWebJarTask.Domain\ProductWebJarTask.Domain.csproj" />
+    <ProjectReference Include="..\ProductWebJarTask.Infrastructure\ProductWebJarTask.Infrastructure.csproj" />
+    <ProjectReference Include="..\ProductWebJarTask.Persistence\ProductWebJarTask.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>
